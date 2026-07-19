@@ -11,7 +11,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/admission/chambres")
 @RequiredArgsConstructor
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {"http://localhost:5173", "http://localhost:5174", "https://chu-health.vercel.app"})
 public class ChambreController {
 
     private final ChambreService chambreService;

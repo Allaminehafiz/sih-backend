@@ -14,7 +14,7 @@ import java.util.*;
 @RestController
 @RequestMapping("/api/dashboard")
 @RequiredArgsConstructor
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {"http://localhost:5173", "http://localhost:5174", "https://chu-health.vercel.app"})
 public class DashboardController {
 
     private final PatientRepository patientRepository;

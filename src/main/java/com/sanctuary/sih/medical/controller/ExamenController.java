@@ -10,7 +10,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/medical/examens")
 @RequiredArgsConstructor
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {"http://localhost:5173", "http://localhost:5174", "https://chu-health.vercel.app"})
 public class ExamenController {
 
     private final ExamenService examenService;
